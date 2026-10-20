@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#075de8">
+<title>Applied Linguistics Quiz</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#172033;background:#f4f7fb}*{box-sizing:border-box}body{margin:0}header{background:#075de8;color:white;padding:28px 18px}main{max-width:850px;margin:22px auto;padding:0 14px}.panel{background:white;border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 4px 18px #15264a12}h1{font-size:clamp(1.5rem,5vw,2.2rem);margin:0 0 8px}p{line-height:1.55}select,button{font:inherit;border-radius:10px;padding:12px;border:1px solid #ccd5e3;width:100%;background:white}button{background:#075de8;color:white;border:0;font-weight:650;margin-top:12px;cursor:pointer}.muted{color:#5a667a}.q{border-top:1px solid #e5eaf1;padding:16px 0}.opt{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid #e1e7f0;border-radius:10px;margin:8px 0}.opt input{margin-top:5px}.result{font-weight:700;font-size:1.15rem}.pill{display:inline-block;background:#e9f1ff;color:#075de8;padding:5px 10px;border-radius:20px;font-size:.85rem}
+</style></head>
+<body><header><h1>Applied Linguistics Practice</h1><p>Mobile-friendly quiz workspace for Assignments 1–6</p></header>
+<main><section class="panel"><span class="pill">Practice mode</span><h2>Choose an assignment</h2><p class="muted">Select an assignment to begin. The question bank will be added from your verified original NPTEL question set.</p><label for="assignment">Assignment</label><select id="assignment"><option value="1">Assignment 1</option><option value="2">Assignment 2</option><option value="3">Assignment 3</option><option value="4">Assignment 4</option><option value="5">Assignment 5</option><option value="6">Assignment 6</option><option value="all">All assignments</option></select><button id="start">Open practice</button></section>
+<section class="panel" id="quiz"><h2>Ready when you are</h2><p>Choose an assignment and tap <b>Open practice</b>. This public site is a starter shell; original question wording and options must be verified against your screenshots before the quizzes are published.</p></section>
+<footer class="muted" style="padding:12px 4px 30px">Study tool • Works on phones, tablets, and desktops</footer></main>
+<script>
+document.getElementById('start').addEventListener('click',()=>{const v=document.getElementById('assignment').value;document.getElementById('quiz').innerHTML='<h2>Assignment '+(v==='all'?'1–6':v)+'</h2><p>This assignment is selected, but its original MCQs have not yet been loaded. I’m keeping the page honest rather than publishing reconstructed questions as exact NPTEL wording.</p><p class="muted">Next step: add the verified question set, answer feedback, and scoring.</p>';});
+</script></body></html>
